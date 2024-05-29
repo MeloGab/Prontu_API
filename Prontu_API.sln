@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prontu_API", "Prontu_API\Prontu_API.csproj", "{60601ABA-745A-445E-A2A9-72C2A6AA8804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60601ABA-745A-445E-A2A9-72C2A6AA8804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60601ABA-745A-445E-A2A9-72C2A6AA8804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60601ABA-745A-445E-A2A9-72C2A6AA8804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60601ABA-745A-445E-A2A9-72C2A6AA8804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A48B345F-F5B7-4EC3-8989-A5936CE19E70}
+	EndGlobalSection
+EndGlobal
