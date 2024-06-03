@@ -15,7 +15,7 @@ namespace Prontu_API.Controllers
             _authInterface = authInterface;
         }
 
-        [HttpPost("register")]
+        [HttpPost("register/Adm")]
         public async Task<ActionResult> Register(UserCreateDto userRegister)
         {
            var response = await _authInterface.Register(userRegister);

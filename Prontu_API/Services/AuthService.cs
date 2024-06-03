@@ -34,13 +34,18 @@ namespace Prontu_API.Services
 
                 _passwordHash.CreatePassHash(userRegister.Password, out byte[] passwordHash, out byte[] passwordSalt);
 
-                User users = new User()
+                UserAdmModel users = new UserAdmModel()
                 {
                     Name = userRegister.Name,
                     Email = userRegister.Email,
                     Role = userRegister.Role,
                     PasswordHash = passwordHash,
                     PasswordSalt = passwordSalt,
+                    CPF = userRegister.CPF,
+                    Address = userRegister.Address,
+                    ClinicName = userRegister.ClinicName,
+                    ClinicImage = userRegister.ClinicImage,
+                    DateofBirth = userRegister.DateofBirth,
                 };
 
                 _context.Add(users);

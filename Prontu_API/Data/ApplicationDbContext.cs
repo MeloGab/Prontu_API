@@ -10,6 +10,6 @@ namespace Prontu_API.Data
         {
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<UserAdmModel> Users { get; set; }
     }
 }
