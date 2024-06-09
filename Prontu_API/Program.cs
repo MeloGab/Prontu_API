@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using MySqlConnector;
 using Prontu_API.Data;
 using Prontu_API.Services;
 using Prontu_API.Services.Interfaces;
@@ -9,10 +10,11 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContextPool<ApplicationDbContext>(options => 
+                options.UseMySql(mySqlConnection, 
+                ServerVersion.AutoDetect(mySqlConnection)));
 
 // Add Interfaces to the container
 builder.Services.AddScoped<IAuthService, AuthService>();
